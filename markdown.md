@@ -26,12 +26,35 @@ that is being called.
 Here is a "note" directive:
 
 ```{note}
+:class: dropdown
+
 Here is a note
 ```
 
+$x^2-4$
 It will be rendered in a special box when you build your book.
 
+````{admonition} Die pq-Formel
+:class: important, dropdown
+
+|  | abc-Formel | pq-Formel |
+|:--- | :---: | :---: |
+| **Formel:** | $x_{1, 2} = \dfrac{-b \pm \sqrt{b^2-4ac\,}}{2a}$ | $x_{1, 2} = -\dfrac{p}2 \pm \sqrt{\left(\dfrac{p}2\right)^2 -q\,}$ |
+| **Diskriminante:** | $D = b^2-4ac$ | $D = \left(\dfrac{p}2\right)^2 -q$ |
+````
+
 Here is an inline directive to refer to a document: {doc}`markdown-notebooks`.
+
+````{admonition} Anzahl der Lösungen und Vorzeichen der Diskriminante
+:class: warning, dropdown
+
+```{math}
+\textsf{Es gibt } \begin{cases}
+\textsf{keine Lösung,} & \textsf{wenn } D<0 \\
+\textsf{1 Lösung,} & \textsf{wenn } D=0 \\
+\textsf{2 Lösungen,} & \textsf{wenn } D>0 \end{cases}
+```
+````
 
 
 ## Citations
