@@ -35,7 +35,7 @@ $x^2-4$
 It will be rendered in a special box when you build your book.
 
 ````{admonition} Die pq-Formel
-:class: important, dropdown
+:class: important
 
 |  | abc-Formel | pq-Formel |
 |:--- | :---: | :---: |
@@ -55,7 +55,6 @@ Here is an inline directive to refer to a document: {doc}`markdown-notebooks`.
 \textsf{2 Lösungen,} & \textsf{wenn } D>0 \end{cases}
 ```
 ````
-
 
 ## Citations
 

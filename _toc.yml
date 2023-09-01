@@ -3,9 +3,16 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
-- file: test-interactive
-- file: pq-formel-interact
+parts:
+  - caption: Teil 1
+    numbered: True  # Only applies to chapters in Part 1.
+    chapters:
+    - file: markdown
+    - file: notebooks
+  - caption: Teil 2
+    numbered: True  # Only applies to chapters in Part 2.
+    chapters:
+    - file: markdown-notebooks
+    - file: test-interactive
+    - file: pq-formel-interact
+    - file: mychapter
